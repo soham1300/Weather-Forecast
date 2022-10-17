@@ -1,0 +1,17 @@
+body
+{
+    background-image: url(https://www.desktopbackground.org/download/o/2011/11/23/301566_beautiful-hd-wallpapers-weather-and-phenomena-backgrounds_1920x1080_h.jpg);
+}
+.ASearch
+{
+    display: none;
+}
+.logo
+{
+    height: 150px;
+}
+.output
+{
+    background-color: rgb(223, 223, 223,0.5);
+    border-radius: 25px;
+}

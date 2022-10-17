@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div class="p-4">
+            <h1>Weather Forecast</h1>
+            <hr>
+        </div>
+        <div class="row ">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 p-2">
+                <div class="BSearch">
+                    <div>
+                        <img src="css/img/Logo.png" alt="" srcset="">
+                    </div>
+                    <div class="input-group p-3">
+                        <input type="text" class="getCity form-control" placeholder="Enter City Name"> 
+                    </div>
+                    <div class="p-2">
+                        <input type="button" value="Search" class="btn btn-primary" onclick="getInfo()">
+                    </div>
+                </div>
+                <div class="ASearch">
+                    <div class="input-group p-2">
+                        <input type="text" class="getCity form-control" placeholder="Enter City Name"> 
+                        <input type="button" value="Search" class="btn btn-primary" onclick="getInfo()">
+                    </div>
+                    <div class="output p-5">
+                        <div><h1 class="cityName"></h1></div>
+                        <div><img class="logo" src="" alt="" srcset=""></div>
+                        <div><h2 class="type"></h2></div>
+                        <div><h2 class="temp"></h2></div>
+                        <div><h3 class="maxTemp"></h3></div>
+                        <div><h3 class="minTemp"></h3></div>
+                    </div>
+                </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
