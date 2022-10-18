@@ -13,6 +13,21 @@ async function getInfo()
         alert("Please enter valid city name.")
     }
 }
+async function getInfo1()
+{
+    city=document.querySelector(".getCity1").value;
+    result=await fetch("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=b3e5a09fb0f011164bcd3582c682192c&units=metric");
+    if (result.status==200)
+    {
+        response=await result.json();
+        console.log(response);
+        showInfo(response);
+    }
+    else
+    {
+        alert("Please enter valid city name.")
+    }
+}
 function showInfo(resp)
 {
     document.querySelector(".BSearch").style.display="none";
